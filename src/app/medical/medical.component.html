@@ -93,7 +93,7 @@
       <mat-grid-tile>
         <mat-form-field appearance="fill">
           <mat-label>numberDocument</mat-label>
-          <input disabled matInput minlength="1" maxlength="10" placeholder="Ej. 1041265333" type="number"  [(ngModel)]="medical.numberDocument"  required>
+          <input [disabled]="editMedical" matInput minlength="1" maxlength="10" placeholder="Ej. 1041265333" type="number"  [(ngModel)]="medical.numberDocument"  required>
         </mat-form-field>
       </mat-grid-tile>
       <mat-grid-tile>

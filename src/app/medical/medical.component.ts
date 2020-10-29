@@ -24,6 +24,7 @@ export class MedicalComponent {
     newPassword = "";
     hide = true;
     hide1 = true;
+    editMedical=false;
     userForm = false;
     form = false;
     displayedColumns: string[] = ['fullName', 'phone', 'documentType.id', 'state', 'medical', 'user'];
@@ -99,6 +100,7 @@ export class MedicalComponent {
     edit(element) {
         this.medical = element;
         this.form = true;
+        this.editMedical=true;
     }
     clean() {
         this.medical.id = "";
